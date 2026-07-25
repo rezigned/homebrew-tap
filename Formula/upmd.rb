@@ -1,21 +1,21 @@
 class Upmd < Formula
-  desc "Run code blocks directly from Markdown in a terminal UI or an automation-friendly CLI"
+  desc "Run code blocks directly from Markdown in a real terminal, keeping commands, context, and output together"
   homepage "https://github.com/rezigned/upmd"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rezigned/upmd/releases/download/v0.1.0/upmd-aarch64-apple-darwin.tar.xz"
+      url "https://github.com/rezigned/upmd/releases/download/v0.1.1/upmd-aarch64-apple-darwin.tar.xz"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rezigned/upmd/releases/download/v0.1.0/upmd-x86_64-apple-darwin.tar.xz"
+      url "https://github.com/rezigned/upmd/releases/download/v0.1.1/upmd-x86_64-apple-darwin.tar.xz"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rezigned/upmd/releases/download/v0.1.0/upmd-aarch64-unknown-linux-gnu.tar.xz"
+      url "https://github.com/rezigned/upmd/releases/download/v0.1.1/upmd-aarch64-unknown-linux-gnu.tar.xz"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rezigned/upmd/releases/download/v0.1.0/upmd-x86_64-unknown-linux-gnu.tar.xz"
+      url "https://github.com/rezigned/upmd/releases/download/v0.1.1/upmd-x86_64-unknown-linux-gnu.tar.xz"
     end
   end
   license "MIT"
