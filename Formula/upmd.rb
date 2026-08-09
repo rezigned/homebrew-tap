@@ -1,21 +1,21 @@
 class Upmd < Formula
   desc "Run tasks and dependency-aware workflows from Markdown in a real terminal"
   homepage "https://github.com/rezigned/upmd"
-  version "0.2.1"
+  version "0.2.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rezigned/upmd/releases/download/v0.2.1/upmd-aarch64-apple-darwin.tar.xz"
+      url "https://github.com/rezigned/upmd/releases/download/v0.2.2/upmd-aarch64-apple-darwin.tar.xz"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rezigned/upmd/releases/download/v0.2.1/upmd-x86_64-apple-darwin.tar.xz"
+      url "https://github.com/rezigned/upmd/releases/download/v0.2.2/upmd-x86_64-apple-darwin.tar.xz"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rezigned/upmd/releases/download/v0.2.1/upmd-aarch64-unknown-linux-gnu.tar.xz"
+      url "https://github.com/rezigned/upmd/releases/download/v0.2.2/upmd-aarch64-unknown-linux-gnu.tar.xz"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rezigned/upmd/releases/download/v0.2.1/upmd-x86_64-unknown-linux-gnu.tar.xz"
+      url "https://github.com/rezigned/upmd/releases/download/v0.2.2/upmd-x86_64-unknown-linux-gnu.tar.xz"
     end
   end
   license "MIT"
